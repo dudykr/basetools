@@ -1,0 +1,13 @@
+[package]
+name = "rpx"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true, features = ["derive"] }
+vcs_utils = { workspace = true }
+which = { workspace = true }

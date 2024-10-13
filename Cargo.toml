@@ -1,0 +1,24 @@
+[workspace]
+members = [
+    "apps/*",
+    "crates/*",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+repository = "https://github.com/dudykr/basetools.git"
+
+
+[workspace.dependencies]
+anyhow = { version = "1" }
+clap = "4.5.20"
+
+vcs_utils = { path = "./crates/vcs_utils" }
+which = "6.0.3"
+
+
+[profile.release]
+lto = true
+opt-level = "z"
