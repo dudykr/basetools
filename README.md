@@ -4,24 +4,7 @@ Base tools for developers. These tools are expected to be in the PATH environmen
 
 # Installation
 
-## Homebrew
-
-```sh
-brew tap dudykr/basetools https://github.com/dudykr/basetools.git
-brew install basetools
-```
-
-## From Github Actions
-
-As this tool is for providing basic tools for developers, it's fast to install it from Github Actions, too.
-
-```yaml
-  - name: Install basetools
-    uses: jaxxstorm/action-install-gh-release@v1.10.0
-    with: # Grab the latest version
-      repo: dudykr/basetools
-
-```
+Grab the latest release from the [Releases](https://github.com/dudykr/basetools/releases) page. We will provide an installation script soon.
 
 # Usage
 
