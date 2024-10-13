@@ -19,3 +19,22 @@ rpx air
 ```
 
 will run `air`.
+
+You can use this to avoid installing binaries globally. e.g.
+
+```sh
+export GOBIN="$PWD/bin"
+
+# Buf & protoc plugins
+go install github.com/bufbuild/buf/cmd/buf@latest
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install connectrpc.com/connect/cmd/protoc-gen-connect-go@latest
+
+# Other tools
+go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+go install github.com/air-verse/air@latest
+go install github.com/jackc/tern/v2@latest
+
+```
+
+This script will install the tools in the current directory's `bin` folder. But normally you can't run it from terminal without specifying the full path. `rpx` solves this problem. `rpx air` will run `air` from the project `bin` directory.
